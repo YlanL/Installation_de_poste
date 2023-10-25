@@ -1,32 +1,29 @@
-
 # MS103 LODI Ylan
 
 ### création utilisateur lodi0003
 On veut créé l'utilisateur lodi0003 tel quel son uid soit 3307, son gid soit 1041 et que son répertoire d'accueil soit /home/lodi0003 et ayant pour mot de passe ec4e01e5. 
-Le groupe ayant pour id 1041 n'éxistant pas, on commence par le créer avec la commande :  
-![]()  
-On le nomme arbitrairement ___________  
+Le groupe ayant pour id 1041 n'éxistant pas, on commence par le créere on le nomme arbitrairement "groupe1041" 
 Pour créer l'utilisateur lodi0003 on utilise la commande **"adduser"** avec les options **--home** pour spécifier le répertoire d'accueil, **--id** pour forcer l'uid de l'utilisateur à la valeur souhaitée, **--gid** pour forcer le groupe principal.  
-On a donc la commande suivante:
-![]()  
+On a donc les commande suivante:
+![sudo addgroup --gid 1041 groupe1041  sudo adduser --home /home/lodi0003 --uid 3307 ---gid1041 lodi0003](Images/CreaGroup1041etUser1.png)  
 On entre par la suite le mot de passe de l'utilisateur.
 On peut consulter l'id de l'utilisateur et de ces groupes en utilisant la commande **id lodi0003**
 On a donc la création de l'utilisateur lodi0003 ayant pour uid 3307 et ayant pour groupe principal le groupe d'id 1041.
-![]()  
+![uid=3307 gid=1041](CreaGroup1041etUser1Preuve)  
 
 ### création utilisateur administrateur
 On veut créé l'utilisateur admin tel quel son uid soit 533, son gid soit 2524, appartenant au groupe sudo et que son répertoire d'accueil soit /home/admin533 et ayant pour mot de passe af032fbc. 
 Le groupe ayant pour id 2524 n'éxistant pas, on commence par le créer avec la commande :  
-![]()  
-On le nomme arbitrairement ___________  
-Pour créer l'utilisateur admin on utilise la commande **"adduser"** avec les options **--home** pour spécifier le répertoire d'accueil, **--id** pour forcer l'uid de l'utilisateur à la valeur souhaitée, **--gid** pour forcer le groupe principal ainsi que l'option ______ pour l'ajouter au groupe "sudo "  
-On a donc la commande suivante:
-![]()  
-On entre par la suite le mot de passe de l'utilisateur.
-On peut consulter l'id de l'utilisateur et de ces groupes en utilisant la commande **id admin**
-On a donc la création de l'utilisateur admin ayant pour uid 533 et ayant pour groupe principal le groupe d'id 2524.
-![]()  
-
+![sudo addgroup --gid 2524 group2524](Images/CreaGroup2524.png)  
+On le nomme arbitrairement group2524  
+Pour créer l'utilisateur admin on utilise la commande **"adduser"** avec les options **--home** pour spécifier le répertoire d'accueil, **--firstuid** pour forcer l'uid de l'utilisateur à la valeur souhaitée, **--gid** pour forcer le groupe principal 
+On a donc les commande suivante:
+![sudo addgroup --gid 2524 groupe2524](Images/Creaadmin533.png)
+on observe dans les dernières lignes que le mot de passe n'as pas été enregistré, on le modifie avec la commande :  
+![sudo passwd admin](Images/MDPadmin533.png)  
+en éxécutant la commande **id amin** on se rend compte que l'uid et le gid sont correctement attribués mais qu'il manque le groupe sudo (première éxécution ci-dessous) :
+![sudo adduser admin sudo](Images/ajoutadmin533sudoETpreuve.png)
+On l'ajoute au groupe sudo à l'aide de la commande : **sudo adduser admin sudo** ; ensuite, en rééxécutant la commande **id admin**, on observe que le groupe sudo appartient désormais aux groupes de l'utilisateur admin.
 ### Outils
 ####python 3 
 ##### formateur de code source
