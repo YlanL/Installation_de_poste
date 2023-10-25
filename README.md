@@ -29,7 +29,7 @@ On l'ajoute au groupe sudo à l'aide de la commande : **sudo adduser admin sudo*
 ##### formateur de code source
 **Black** est un formateur de code source, un formateur de code source permet de mettre en forme un fichier selon les normes, ici ce sont les normes PEP que black respecte, on peut l'installer en utilisant la commande:
 **sudo apt install black**  
-On constate que l'installation de black et ses dépendance à été un succès:
+On constate que l'installation de black et ses dépendance à été un succès:  
 ![Succesfuly installed blac-23.10.1](Images/installBlackEtDepReussie.png)  
 Pour vérifier son fonctionnement, on écrit un programme fonctionnel mais qui ne respecte pas les recommandations de mise en page PEP, comme ceci :  
 ![désordre](Images/BLACKAVANT.png)  
@@ -42,9 +42,9 @@ Notre programme rentre alors dans les normes de la PEP selon la version install�
 **pylint** est un analyseur statique de code, un analyseur statique de code permet de trouver des erreurs dans le code, vérifier la mise en forme, s'assurer de la visibilité, on peut l'installer en utilisant la commande :
 **sudo apt install pylint**  
 On constate que l'installation à été un succès :  
-![successfully installed pylint-3.0.2](Images/installPylintEtDepReussi.png)  
+![successfully installed pylint-3.0.2](Images/installPylintEtDepReussie.png)  
 Pour vérifier son fonctionnement, on écrit un programme fonctionnel mais mais contenant des aberrations de mise en page (variable en toute majuscule,mise en page incorrecte), comme ci-dessous à gauche :  
-![pylint](PREUVEPYLINT.png)  
+![pylint](PREUVEpylint.png)  
 A drpite, on à utilisé la commande **python3 -m pylint fichier**  
 Dans notre cas, on entre la commande avec fichier : __./fonctionBlack.py__ pour les même raison que l'utilisation de black.
 On observe que pylint nous indique les erreurs de mise et forme mais ne modifie pas le fichier, il nous indique ce qui ne vas pas par rapports aux normes, et c'est à nous de corriger notre programme.
