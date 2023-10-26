@@ -9,7 +9,7 @@ On a donc les commande suivante:
 On entre par la suite le mot de passe de l'utilisateur.
 On peut consulter l'id de l'utilisateur et de ces groupes en utilisant la commande **id lodi0003**
 On a donc la création de l'utilisateur lodi0003 ayant pour uid 3307 et ayant pour groupe principal le groupe d'id 1041.
-![uid=3307 gid=1041](CreaGroup1041etUser1Preuve)  
+![uid=3307 gid=1041](Images/CreaGroup1041etUser1Preuve)  
 
 ### création utilisateur administrateur
 On veut créé l'utilisateur admin tel quel son uid soit 533, son gid soit 2524, appartenant au groupe sudo et que son répertoire d'accueil soit /home/admin533 et ayant pour mot de passe af032fbc. 
@@ -25,7 +25,7 @@ en éxécutant la commande **id amin** on se rend compte que l'uid et le gid son
 ![sudo adduser admin sudo](Images/ajoutadmin533sudoETpreuve.png)  
 On l'ajoute au groupe sudo à l'aide de la commande : **sudo adduser admin sudo** ; ensuite, en rééxécutant la commande **id admin**, on observe que le groupe sudo appartient désormais aux groupes de l'utilisateur admin.    
 ### Outils
-####python 3 
+####  python 3 
 ##### formateur de code source
 **Black** est un formateur de code source, un formateur de code source permet de mettre en forme un fichier selon les normes, ici ce sont les normes PEP que black respecte, on peut l'installer en utilisant la commande:
 **sudo apt install black**  
@@ -56,7 +56,7 @@ Pour vérifier son fonctionnement, on écrit un programme fonctionnant qu'avec c
 On constate que l'installation à été un succès :  
 ![]()  
 Pour vérifier son fonctionnement, on écrit un programme pour lesquels on doit avoir une restriction sur les paramètres d'une fonction ou sur le retour :  
-![mypy](/images/PREUVEMypy.png)  
+![mypy](Images/PREUVEMypy.png)  
 ici la restriction est principalement sur le paramètre _numero_ qui correspond à un numéro de téléphone, on demande une chaine de caractère _(numero:str)_ pour pouvoir renvoyer une chaine de caratère, si numéro est un entier, une erreur se produira, on anticipe ce problème en imposant le type du paramètre en question.
 
 ##### outil de génération de documentation HTML à partir de docstrings
@@ -68,7 +68,7 @@ Pour vérifier  son fonctionnement, on écrit un script contenant plusieurs fonc
 on utilise la commande **python3 -m pydoc ./fonctionEpydoc.py**. Ci-dessous, à gauche se trouve le script, et à droite le résultat de la commande énoncé ci-avant.
 ![pydoc](Images/utilisationPydoc1.png) 
 On peut par la suite enregistrer ce fichier en format html en procédant de cette manière:  
-**python3 -m unitest cheminfichier > nomfichier.html**
+**python3 -m unitest cheminfichier > nomfichier.html**  
 ![pydocs2](Images/utilisatioonPydoc2.png)
 ##### cadriciel de tests unitaires 
 **unittest** est un cadriciel permettant de réaliser des tests unitaires, il permet de vérifier, en fonction des entrées fournies à l’unité du module, que la sortie corresponde aux spécifications de l’unité, il est déjà intégré dans python,
