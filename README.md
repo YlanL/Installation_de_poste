@@ -87,5 +87,17 @@ Pour vérifier son fonctionnement, on écrit un programme basique nécessitant l
 le preogramme intitulé "testPygame.py" permet la création d'une fenêtre graphique de couleur rgd(10,186,180); en bas de l'image, on a la commande permettant d'éxécuté le programme précédant soit la commande : **python ./testPygame.py**. Son résultat est l'arrière plan, dimensionné tel que dans le script et de couleur souhaité.
 
 #### Outils de base pour le développement avec le langage Java 
-Pour installer Java on utilise la commande **sudo apt install default-jre** java à besoin des JDK (kit de developpement Java) pour fonctionner, on éxécute la commande : **sudo apt install default-jdk**
+Pour installer Java on utilise la commande **sudo apt install default-jre**  
+![installation réussi](Images/INSTALLjava.png)
+java à besoin des JDK (kit de developpement Java) pour fonctionner, on éxécute la commande : **sudo apt install default-jdk**. 
+Pour vérifier son fonctionnement, on peut écrire le scripte ci-dessous (en haut) :
+![installation réussi](Images/PREUVEjava.png)  
+on compile le programme avec la commande **javac Hello.java**
+puis on l'éxécute avec la commande **java Hello**, on observe que ce qui est affiché correspond à ce qui est attendu.
+#### VSCodium
+VScodium est un éditeur de code open-source gratuit, il permet de debugger, respecter la syntaxe des normes des langages....
+On l'installe avec la commande : **sudo snap install codium --classic**  
+![vscodium installé](Images/INSTALLvscodium.png)  
+
+
 
