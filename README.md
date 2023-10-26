@@ -95,6 +95,7 @@ Pour vérifier son fonctionnement, on peut écrire le scripte ci-dessous (en hau
 on compile le programme avec la commande **javac Hello.java**
 puis on l'éxécute avec la commande **java Hello**, on observe que ce qui est affiché correspond à ce qui est attendu.
 #### VSCodium
+##### python
 VScodium est un éditeur de code open-source gratuit, il permet de debugger, respecter la syntaxe des normes des langages....
 On l'installe avec la commande : **sudo snap install codium --classic**  
 ![vscodium installé](Images/INSTALLvscodium.png)  
@@ -110,9 +111,23 @@ Nous testons par la suite le bon fonctionnement de notre extension, ci-dessous u
 Et avec débogage :  
 ![avec débogage](Images/codiumPYdebuugOK.png)  
 On observe qu'avec le débogage de notre extension, l'erreur apparait plus clairement et il est par la suite plus facile de corriger les erreurs de code.
-
-
-
-
-
+##### java
+Sur VS codium, on peut installer l'extension **Language Support for Java(TM) by Red Hat** du marketplace  
+![première extension](Images/EXTjavacodium2)  
+cette extention sert à permettre d'utiliser java sur VScodium.
+![execution d'un programme](Images/LANCERjavacodium.png)  
+On peut installer l'extension **Debugger for Java**, elle permet comme son nom l'indique de debogger du code java  
+![deuxième extension](Images/EXTjavacodium1.png)
+pour vérifier son fonctionnement on peut ajouter des erreurs dans notre code et procéder au debogage :  
+![debogage](Images/DEBOGERjava.png)  
+Les erreurs de codes ci-dessus sont le nom de la fonction et le manque d'un guillement dans le println.
+En troisième nous pouvons installer **Test Runner for Java**  
+![troisième extension](Images/EXTjavacodium3.png)
+Celle-ci permet de réaliser des tests.  
+##### gitlens 
+Pour installer **gitlens** on cherche dans le marketplace "gitlens" et on installe l'extension, celle-ci permet d'utiliser des commandes git facilement dans VScodium. Voici quelques fonctionnalités :  
+![gitlens](Images/GITLENS2.png)  
+![gitlens2](Images/GITLENS.png)  
+![gitlens3](Images/GITLENS3.png)  
+Il est possible de faire des commit en appuyant sur un bouton, de créer des branches facilement et de voir les états des commits, des fichiers dans les commits et les modifications par rapport à ces commits. 
 
