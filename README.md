@@ -99,8 +99,20 @@ VScodium est un éditeur de code open-source gratuit, il permet de debugger, res
 On l'installe avec la commande : **sudo snap install codium --classic**  
 ![vscodium installé](Images/INSTALLvscodium.png)  
 On ouvre vs codium en entreant la commande **codium** dans le terminal, l'application s'ouvre par la suite.  
-On veut installer des extensions pour l'utilisateur lodi0003, on change alors d'utilisateur avec la commande **su lodi0003**
-![utilisateur lodi0003 et son ~](Images/CHANGERutili.png)
+On veut installer des extensions pour l'utilisateur lodi0003, on change alors d'utilisateur avec la commande **su lodi0003**  
+![utilisateur lodi0003 et son ~](Images/CHANGERutili.png)  
+Pour installer des extensions sur VSCodium on peut utiliser les extensions du MarketPlace de vsCodium (voir ci-dessous) :  
+![partie extension marketplace d codium](Images/EXTENSIONcodium.png)  
+On souhaite installée une extension python, une extension permettant de débogger le code peut s'avérer très utile pour avoir des indications concernant les problèmes dans le code, pour cela on peut rechercher dans le marketplace des extensions par mots clés. On installe l'extension suivant nos besoins, nous choississons :  
+![choix](Images/EXTpyDEBUG.png) et nous l'installons.  
+Nous testons par la suite le bon fonctionnement de notre extension, ci-dessous un programme contenant une erreur éxécuté sans débogage:  
+![sans débogage](Images/codiumpySSdebug.png)  
+Et avec débogage :  
+![avec débogage](Images/codiumPYdebuugOK.png)  
+On observe qu'avec le débogage de notre extension, l'erreur apparait plus clairement et il est par la suite plus facile de corriger les erreurs de code.
+
+
+
 
 
 
