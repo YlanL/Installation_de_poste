@@ -59,16 +59,16 @@ Pour vérifier son fonctionnement, on écrit un programme pour lesquels on doit 
 ici la restriction est principalement sur le paramètre _numero_ qui correspond à un numéro de téléphone, on demande une chaine de caractère _(numero:str)_ pour pouvoir renvoyer une chaine de caratère, si numéro est un entier, une erreur se produira, on anticipe ce problème en imposant le type du paramètre en question.
 
 ##### outil de génération de documentation HTML à partir de docstrings
-**pydoc** est un outil de génération de document à partir de la docstring, il permet d'afficher les docstring, et d'autres objets, on peut l'installer en utilisant la commande : 
+**pydocs** est un outil de génération de document à partir de la docstring, il permet d'afficher les docstring, et d'autres objets, on peut l'installer en utilisant la commande : 
 **pip install pydocs**  
 On constate que l'installation est un succès:  
-![installation pydocs](Images/InstallationPYDOCSetDepReussi.png.png)
+![installation pydocs](Images/InstallationPYDOCSetDepReussi.png.png)  
 Pour vérifier  son fonctionnement, on écrit un script contenant plusieurs fonctions, des variables seules et autre.
-on utilise la commande **python3 -m pydoc ./fonctionEpydoc.py**. Ci-dessous, à gauche se trouve le script, et à droite le résultat de la commande énoncé ci-avant.
-![pydoc](Images/utilisationPydoc1.png) 
+on utilise la commande **python3 -m pydoc ./fonctionEpydoc.py**. Ci-dessous, à gauche se trouve le script, et à droite le résultat de la commande énoncé ci-avant.  
+![pydoc](Images/utilisationPydoc1.png)  
 On peut par la suite enregistrer ce fichier en format html en procédant de cette manière:  
-**python3 -m unitest cheminfichier > nomfichier.html**  
-![pydocs2](Images/utilisatioonPydoc2.png)
+**python3 -m unitest cheminfichier > nomfichier.html** -(il est intégré l'option -w qui permet d'enregistrer directement dans un ficher html)_  
+![pydocs2](Images/utilisatioonPydoc2.png)  
 ##### cadriciel de tests unitaires 
 **unittest** est un cadriciel permettant de réaliser des tests unitaires, il permet de vérifier, en fonction des entrées fournies à l’unité du module, que la sortie corresponde aux spécifications de l’unité, il est déjà intégré dans python,
 on peut le constater gràce à la commande :
@@ -76,26 +76,27 @@ on peut le constater gràce à la commande :
 Pour vérifier son fonctionnement on écrit le programme suivant (à droite):  
 ![pydocs](Images/PREUVEunittest.png)
 On teste les valeurs de _test_values_ sont, par le biais de la fonction carré bel et bien le carré d'un autre nombre. Ici on test pour 5 et 20, or 20 n'est pas le carré de 5, unittest nous renvoie donc une erreur et nous précise que 5 au carré vaut 25.
-unittest nous indique _FAIL_ comme quoi les tests ne sont pas tous correscts, si ça aurait été le cas, _OK_ aurait été indiqué.
+unittest nous indique _FAIL_ comme quoi les tests ne sont pas tous corrects, si ça aurait été le cas, _OK_ aurait été indiqué.
 
-##### pygames
-**pygames** est un module permettant la création de jeu sur python, on l'installe avec la commande : 
-**sudo apt install python-pygames**
+##### pygame
+**pygame** est un module permettant la création de jeu sur python, on l'installe avec la commande : **sudo apt install python-pygame**  
+on constate sa bonne installation :  
+![pygame installé](Images/installPygameEtDepReussie.png)  
 Pour vérifier son fonctionnement, on écrit un programme basique nécessitant le module. On va donc l'importer dans notre programme. Ci-dessous, il y a le programme python, la commande et son résultat:  
-![pygames](Images/PREUVEpygame.png)  
-le preogramme intitulé "testPygame.py" permet la création d'une fenêtre graphique de couleur rgd(10,186,180); en bas de l'image, on a la commande permettant d'éxécuté le programme précédant soit la commande : **python ./testPygame.py**. Son résultat est l'arrière plan, dimensionné tel que dans le script et de couleur souhaité.
+![pygame](Images/PREUVEpygame.png)  
+le programme intitulé "testPygame.py" permet la création d'une fenêtre graphique de couleur rgb(10,186,180); en bas de l'image, on a la commande permettant d'éxécuté le programme précédant soit la commande : **python ./testPygame.py**. Son résultat est l'arrière plan, dimensionné tel que dans le script et de couleur souhaité.
 
 #### Outils de base pour le développement avec le langage Java 
 Pour installer Java on utilise la commande **sudo apt install default-jre**  
-![installation réussi](Images/INSTALLjava.png)
+![installation réussi](Images/INSTALLjava.png)  
 java à besoin des JDK (kit de developpement Java) pour fonctionner, on éxécute la commande : **sudo apt install default-jdk**. 
-Pour vérifier son fonctionnement, on peut écrire le scripte ci-dessous (en haut) :
+Pour vérifier son fonctionnement, on peut écrire le scripte ci-dessous (en haut) :  
 ![installation réussi](Images/PREUVEjava.png)  
 on compile le programme avec la commande **javac Hello.java**
 puis on l'éxécute avec la commande **java Hello**, on observe que ce qui est affiché correspond à ce qui est attendu.
 #### VSCodium
 ##### python
-VScodium est un éditeur de code open-source gratuit, il permet de debugger, respecter la syntaxe des normes des langages....
+VScodium est un éditeur de code open-source gratuit.  
 On l'installe avec la commande : **sudo snap install codium --classic**  
 ![vscodium installé](Images/INSTALLvscodium.png)  
 On ouvre vs codium en entreant la commande **codium** dans le terminal, l'application s'ouvre par la suite.  
@@ -104,24 +105,24 @@ On veut installer des extensions pour l'utilisateur lodi0003, on change alors d'
 Pour installer des extensions sur VSCodium on peut utiliser les extensions du MarketPlace de vsCodium (voir ci-dessous) :  
 ![partie extension marketplace d codium](Images/EXTENSIONcodium.png)  
 On souhaite installée une extension python, une extension permettant de débogger le code peut s'avérer très utile pour avoir des indications concernant les problèmes dans le code, pour cela on peut rechercher dans le marketplace des extensions par mots clés. On installe l'extension suivant nos besoins, nous choississons :  
-![choix](Images/EXTpyDEBUG.png) et nous l'installons.  
+![choix](Images/EXTpyDEGUG.png) et nous l'installons.  
 Nous testons par la suite le bon fonctionnement de notre extension, ci-dessous un programme contenant une erreur éxécuté sans débogage:  
 ![sans débogage](Images/codiumpySSdebug.png)  
 Et avec débogage :  
 ![avec débogage](Images/codiumPYdebuugOK.png)  
 On observe qu'avec le débogage de notre extension, l'erreur apparait plus clairement et il est par la suite plus facile de corriger les erreurs de code.
 ##### java
-Sur VS codium, on peut installer l'extension **Language Support for Java(TM) by Red Hat** du marketplace  
+Sur VS codium, on peut installer l'extension **Language Support for Java(TM) by Red Hat** du marketplace.  
 ![première extension](Images/EXTjavacodium2)  
-cette extention sert à permettre d'utiliser java sur VScodium.
+cette extention sert à permettre d'utiliser java sur VScodium.  
 ![execution d'un programme](Images/LANCERjavacodium.png)  
 On peut installer l'extension **Debugger for Java**, elle permet comme son nom l'indique de debogger du code java  
-![deuxième extension](Images/EXTjavacodium1.png)
+![deuxième extension](Images/EXTjavacodium1.png)  
 pour vérifier son fonctionnement on peut ajouter des erreurs dans notre code et procéder au debogage :  
 ![debogage](Images/DEBOGERjava.png)  
-Les erreurs de codes ci-dessus sont le nom de la fonction et le manque d'un guillement dans le println.
+Les erreurs de codes ci-dessus sont le nom de la fonction et le manque d'un guillement dans le println.  
 En troisième nous pouvons installer **Test Runner for Java**  
-![troisième extension](Images/EXTjavacodium3.png)
+![troisième extension](Images/EXTjavacodium3.png)  
 Celle-ci permet de réaliser des tests.  
 ##### gitlens 
 Pour installer **gitlens** on cherche dans le marketplace "gitlens" et on installe l'extension, celle-ci permet d'utiliser des commandes git facilement dans VScodium. Voici quelques fonctionnalités :  
