@@ -113,7 +113,7 @@ Et avec débogage :
 On observe qu'avec le débogage de notre extension, l'erreur apparait plus clairement et il est par la suite plus facile de corriger les erreurs de code.
 ##### java
 Sur VS codium, on peut installer l'extension **Language Support for Java(TM) by Red Hat** du marketplace.  
-![première extension](Images/EXTjavacodium2)  
+![première extension](Images/EXTjavacodium2.png)  
 cette extention sert à permettre d'utiliser java sur VScodium.  
 ![execution d'un programme](Images/LANCERjavacodium.png)  
 On peut installer l'extension **Debugger for Java**, elle permet comme son nom l'indique de debogger du code java  
