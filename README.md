@@ -2,14 +2,14 @@
 
 ### création utilisateur lodi0003
 On veut créé l'utilisateur lodi0003 tel quel son uid soit 3307, son gid soit 1041 et que son répertoire d'accueil soit /home/lodi0003 et ayant pour mot de passe ec4e01e5. 
-Le groupe ayant pour id 1041 n'éxistant pas, on commence par le créere on le nomme arbitrairement "groupe1041" 
+Le groupe ayant pour id 1041 n'éxistant pas, on commence par le créer, on le nomme arbitrairement "groupe1041".  
 Pour créer l'utilisateur lodi0003 on utilise la commande **"adduser"** avec les options **--home** pour spécifier le répertoire d'accueil, **--id** pour forcer l'uid de l'utilisateur à la valeur souhaitée, **--gid** pour forcer le groupe principal.  
 On a donc les commande suivante:  
 ![sudo addgroup --gid 1041 groupe1041  sudo adduser --home /home/lodi0003 --uid 3307 ---gid1041 lodi0003](Images/CreaGroup1041etUser1.png)  
 On entre par la suite le mot de passe de l'utilisateur.
 On peut consulter l'id de l'utilisateur et de ces groupes en utilisant la commande **id lodi0003**
-On a donc la création de l'utilisateur lodi0003 ayant pour uid 3307 et ayant pour groupe principal le groupe d'id 1041.
-![uid=3307 gid=1041](Images/CreaGroup1041etUser1Preuve)  
+On a donc la création de l'utilisateur lodi0003 ayant pour uid 3307 et ayant pour groupe principal le groupe d'id 1041.  
+![uid=3307 gid=1041](Images/CreaGroup1041etUser1Preuve.png)  
 
 ### création utilisateur administrateur
 On veut créé l'utilisateur admin tel quel son uid soit 533, son gid soit 2524, appartenant au groupe sudo et que son répertoire d'accueil soit /home/admin533 et ayant pour mot de passe af032fbc. 
