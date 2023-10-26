@@ -98,6 +98,9 @@ puis on l'éxécute avec la commande **java Hello**, on observe que ce qui est a
 VScodium est un éditeur de code open-source gratuit, il permet de debugger, respecter la syntaxe des normes des langages....
 On l'installe avec la commande : **sudo snap install codium --classic**  
 ![vscodium installé](Images/INSTALLvscodium.png)  
+On ouvre vs codium en entreant la commande **codium** dans le terminal, l'application s'ouvre par la suite.  
+On veut installer des extensions pour l'utilisateur lodi0003, on change alors d'utilisateur avec la commande **su lodi0003**
+![utilisateur lodi0003 et son ~](Images/CHANGERutili.png)
 
 
 
