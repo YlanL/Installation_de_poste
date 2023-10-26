@@ -43,13 +43,49 @@ Notre programme rentre alors dans les normes de la PEP selon la version install�
 **sudo apt install pylint**  
 On constate que l'installation à été un succès :  
 ![successfully installed pylint-3.0.2](Images/installPylintEtDepReussie.png)  
-Pour vérifier son fonctionnement, on écrit un programme fonctionnel mais mais contenant des aberrations de mise en page (variable en toute majuscule,mise en page incorrecte), comme ci-dessous à gauche :  
+Pour vérifier son fonctionnement, on écrit un programme fonctionnel mais contenant des aberrations de mise en page (variable en toute majuscule,mise en page incorrecte), comme ci-dessous à gauche :  
 ![pylint](Images/PREUVEpylint.png)  
-A drpite, on à utilisé la commande **python3 -m pylint fichier**  
-Dans notre cas, on entre la commande avec fichier : __./fonctionBlack.py__ pour les même raison que l'utilisation de black.
+A droite, on à utilisé la commande **python3 -m pylint fichier**  
+Dans notre cas, on entre la commande avec fichier : __./fonctionPylint.py__ pour les même raison que l'utilisation de black.
 On observe que pylint nous indique les erreurs de mise et forme mais ne modifie pas le fichier, il nous indique ce qui ne vas pas par rapports aux normes, et c'est à nous de corriger notre programme.
+Pour vérifier son fonctionnement, on écrit un programme fonctionnant qu'avec certains type, comme ci-dessous par exemple  : 
 
 ##### outil de vérification d’annotations de type
+**mypy** est un outil de vérification d'annotation de type, il permet d'ajouter des contraintes sur des variables, paramètres de fonctions, on peut l'installer en utilisant la commande :
+**sudo apt install mypy**  
+On constate que l'installation à été un succès :  
+![]()  
+Pour vérifier son fonctionnement, on écrit un programme pour lesquels on doit avoir une restriction sur les paramètres d'une fonction ou sur le retour :  
+![mypy](/images/PREUVEMypy.png)  
+ici la restriction est principalement sur le paramètre _numero_ qui correspond à un numéro de téléphone, on demande une chaine de caractère _(numero:str)_ pour pouvoir renvoyer une chaine de caratère, si numéro est un entier, une erreur se produira, on anticipe ce problème en imposant le type du paramètre en question.
+
 ##### outil de génération de documentation HTML à partir de docstrings
+**pydoc** est un outil de génération de document à partir de la docstring, il permet d'afficher les docstring, et d'autres objets, on peut l'installer en utilisant la commande : 
+**pip install pydocs**  
+On constate que l'installation est un succès:  
+![installation pydocs](Images/InstallationPYDOCSetDepReussi.png)
+Pour vérifier  son fonctionnement, on écrit un script contenant plusieurs fonctions, des variables seules et autre.
+on utilise la commande **python3 -m pydoc ./fonctionEpydoc.py**. Ci-dessous, à gauche se trouve le script, et à droite le résultat de la commande énoncé ci-avant.
+![pydoc](Images/utilisationPydoc1.png) 
+On peut par la suite enregistrer ce fichier en format html en procédant de cette manière:  
+**python3 -m unitest cheminfichier > nomfichier.html**
+![pydocs2](Images/utilisationPydoc2.png)
 ##### cadriciel de tests unitaires 
+**unittest** est un cadriciel permettant de réaliser des tests unitaires, il permet de vérifier, en fonction des entrées fournies à l’unité du module, que la sortie corresponde aux spécifications de l’unité, il est déjà intégré dans python,
+on peut le constater gràce à la commande :
+**python3 -m unittest cheminfichier**  
+Pour vérifier son fonctionnement on écrit le programme suivant (à droite):  
+![pydocs](Images/PREUVEunittest.png)
+On teste les valeurs de _test_values_ sont, par le biais de la fonction carré bel et bien le carré d'un autre nombre. Ici on test pour 5 et 20, or 20 n'est pas le carré de 5, unittest nous renvoie donc une erreur et nous précise que 5 au carré vaut 25.
+unittest nous indique _FAIL_ comme quoi les tests ne sont pas tous correscts, si ça aurait été le cas, _OK_ aurait été indiqué.
+
 ##### pygames
+**pygames** est un module permettant la création de jeu sur python, on l'installe avec la commande : 
+**sudo apt install python-pygames**
+Pour vérifier son fonctionnement, on écrit un programme basique nécessitant le module. On va donc l'importer dans notre programme. Ci-dessous, il y a le programme python, la commande et son résultat:  
+![pygames](Images/PREUVEpygame.png)  
+le preogramme intitulé "testPygame.py" permet la création d'une fenêtre graphique de couleur rgd(10,186,180); en bas de l'image, on a la commande permettant d'éxécuté le programme précédant soit la commande : **python ./testPygame.py**. Son résultat est l'arrière plan, dimensionné tel que dans le script et de couleur souhaité.
+
+#### Outils de base pour le développement avec le langage Java 
+Pour installer Java on utilise la commande **sudo apt install default-jre** java à besoin des JDK (kit de developpement Java) pour fonctionner, on éxécute la commande : **sudo apt install default-jdk**
+
