@@ -67,7 +67,7 @@ Pour vérifier  son fonctionnement, on écrit un script contenant plusieurs fonc
 on utilise la commande **python3 -m pydoc ./fonctionEpydoc.py**. Ci-dessous, à gauche se trouve le script, et à droite le résultat de la commande énoncé ci-avant.  
 ![pydoc](Images/utilisationPydoc1.png)  
 On peut par la suite enregistrer ce fichier en format html en procédant de cette manière:  
-**python3 -m unitest cheminfichier > nomfichier.html** -(il est intégré l'option -w qui permet d'enregistrer directement dans un ficher html)_  
+**python3 -m unitest cheminfichier > nomfichier.html** _(il est intégré l'option -w qui permet d'enregistrer directement dans un ficher html)_  
 ![pydocs2](Images/utilisatioonPydoc2.png)  
 ##### cadriciel de tests unitaires 
 **unittest** est un cadriciel permettant de réaliser des tests unitaires, il permet de vérifier, en fonction des entrées fournies à l’unité du module, que la sortie corresponde aux spécifications de l’unité, il est déjà intégré dans python,
